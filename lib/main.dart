@@ -10,7 +10,8 @@ import 'package:kuda_ui/screens/send_screen.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() async {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // if you want to add a delay duration for your splash screen
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   // await Future.delayed(
   //   const Duration(seconds: 2),
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // scaffoldBackgroundColor: Colors.grey.shade100,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white70),
         useMaterial3: true,
       ),
       home: Layout(),

@@ -68,6 +68,9 @@ flutter:
     - assets/images/me.jpg
     - assets/images/nigeria-flag-icon.webp
     - assets/images/kuda_card.jpg
+    - assets/images/kuda_bank_card.png
+    - assets/images/kuda_save.png
+    - assets/images/nigeria_piggy_bank.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

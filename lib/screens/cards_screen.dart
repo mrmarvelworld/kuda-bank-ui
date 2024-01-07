@@ -49,7 +49,7 @@ class CardsScreen extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Image.asset(
-                'assets/images/kuda_card.jpg',
+                'assets/images/kuda_bank_card.png',
                 fit: BoxFit.fitHeight,
               ),
             ),
