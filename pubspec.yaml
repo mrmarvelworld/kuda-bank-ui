@@ -98,10 +98,10 @@ flutter_native_splash :
   ios: true
   web: false
 
-  color: "##41256f"
+  color: "#41256f"
   image: "assets/images/kuda_splash.png"  
   android_12:
-    color: "##41256f"
+    color: "#41256f"
     image: "assets/images/kuda_splash.png"  
 
 flutter_launcher_icons:
