@@ -10,7 +10,7 @@ class SaveTab extends StatelessWidget {
     return SingleChildScrollView(
       physics: NeverScrollableScrollPhysics(),
       child: Container(
-        margin: EdgeInsets.only(left: 20, right: 20),
+        margin: EdgeInsets.only(left: 20, right: 20, top: 30),
         child: Column(
           children: <Widget>[
             SizedBox(height: 30),
@@ -59,7 +59,7 @@ class SaveTab extends StatelessWidget {
             Container(
               color: Colors.white,
               width: double.infinity,
-              height: 300,
+              height: 250,
               child: Image.asset(
                 'assets/images/nigeria_piggy_bank.png',
                 // fit: BoxFit.fitHeight,

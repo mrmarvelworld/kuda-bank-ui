@@ -38,7 +38,7 @@ class InvestTab extends StatelessWidget {
             ),
             Text(
               'Buy stocks with as little as \$10.',
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
             ),
             KudaButton(title: 'Find a Stock'),
             smallText(text: 'Kuda doesn\'t give investment adivce.Please,'),
@@ -76,7 +76,7 @@ class smallText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(fontSize: 9, color: Colors.grey),
+      style: TextStyle(fontSize: 10, color: Colors.grey.shade400),
     );
   }
 }

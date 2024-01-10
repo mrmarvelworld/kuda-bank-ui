@@ -8,7 +8,7 @@ class BorrowTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        margin: EdgeInsets.only(left: 20, right: 20),
+        margin: EdgeInsets.only(left: 20, right: 20, top: 30),
         child: Column(children: <Widget>[
           BalanceBar(
             title: 'You Owe',
@@ -26,7 +26,7 @@ class BorrowTab extends StatelessWidget {
             icon: Icon(
               Icons.credit_card,
               color: Colors.blueAccent,
-              size: 50,
+              size: 30,
             ),
           ),
           BorrowCard(
@@ -36,7 +36,7 @@ class BorrowTab extends StatelessWidget {
               icon: Icon(
                 Icons.umbrella_rounded,
                 color: Colors.greenAccent,
-                size: 50,
+                size: 30,
               )),
           BorrowCard(
               title: 'Salary Loan',
@@ -45,7 +45,7 @@ class BorrowTab extends StatelessWidget {
               icon: Icon(
                 Icons.wallet,
                 color: Colors.blue,
-                size: 50,
+                size: 30,
               )),
         ]),
       ),
@@ -82,7 +82,7 @@ class BorrowCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
       ),
       width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -94,7 +94,9 @@ class BorrowCard extends StatelessWidget {
                     child: Text(
                       'Coming Soon',
                       style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 8),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 15, vertical: 3),
                     decoration: BoxDecoration(
@@ -105,7 +107,7 @@ class BorrowCard extends StatelessWidget {
                 ],
               ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,10 +121,10 @@ class BorrowCard extends StatelessWidget {
                       subtitle1,
                       softWrap: true,
                       maxLines: 2,
-                      style: TextStyle(color: subtitleColor, fontSize: 12),
+                      style: TextStyle(color: subtitleColor, fontSize: 10),
                     ),
                     Text(subtitle2,
-                        style: TextStyle(color: subtitleColor, fontSize: 12))
+                        style: TextStyle(color: subtitleColor, fontSize: 10))
                   ],
                 ),
                 icon
