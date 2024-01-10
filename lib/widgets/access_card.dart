@@ -15,7 +15,7 @@ class AccessCard extends StatelessWidget {
     return Expanded(
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+        padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
         decoration: BoxDecoration(
             boxShadow: [BoxShadow(color: Colors.grey.shade500, blurRadius: 2)],
             color: Colors.white,

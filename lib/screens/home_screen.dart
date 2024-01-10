@@ -7,6 +7,7 @@ import 'package:kuda_ui/widgets/balance_bar.dart';
 import 'package:kuda_ui/widgets/cta_button.dart';
 import 'package:kuda_ui/widgets/rounded_image.dart';
 import 'package:kuda_ui/widgets/tabs/borrow_tab.dart';
+import 'package:kuda_ui/widgets/tabs/invest_tab.dart';
 import 'package:kuda_ui/widgets/tabs/save_tab.dart';
 import 'package:kuda_ui/widgets/tabs/spend_tab.dart';
 
@@ -27,11 +28,12 @@ class _HomeScreenState extends State<HomeScreen>
     SpendTab(),
     SaveTab(),
     BorrowTab(),
-    SaveTab(),
+    InvestTab(),
   ];
   late TabController _tabController;
   final Key tabKey = UniqueKey();
   int navigationIndex = 0;
+  var _tabColor;
 
   @override
   void initState() {
@@ -68,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen>
         bottom: TabBar(
           controller: _tabController,
           isScrollable: true,
-          labelColor: tabItems[_tabController.index]['color'],
+          labelColor: tabItems[navigationIndex]['color'],
           unselectedLabelColor: Colors.grey,
           labelPadding: EdgeInsets.symmetric(horizontal: 7),
           indicator: null,
@@ -77,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen>
             tabItems.length,
             (index) => Tab(
               child: Container(
-                  margin: EdgeInsets.only(right: 1),
+                  margin: EdgeInsets.only(right: 10),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey.shade400),
                       borderRadius: BorderRadius.circular(10),
@@ -85,12 +87,12 @@ class _HomeScreenState extends State<HomeScreen>
                       boxShadow: [
                         BoxShadow(blurRadius: 10, color: Colors.white70)
                       ]),
-                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
                   child: Text(
                     tabItems[index]['text'],
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 10,
+                        fontSize: 13,
                         color: tabItems[index]['color']),
                   )),
             ),

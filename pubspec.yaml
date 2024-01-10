@@ -71,6 +71,13 @@ flutter:
     - assets/images/kuda_bank_card.png
     - assets/images/kuda_save.png
     - assets/images/nigeria_piggy_bank.png
+    - assets/images/bamboo_icon.png
+    - assets/images/tesla_icon.png
+    - assets/images/facebook_icon.png
+    - assets/images/amazon_icon.png
+    - assets/images/google_icon.png
+    - assets/images/apple_icon.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

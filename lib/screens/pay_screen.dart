@@ -48,7 +48,7 @@ class PayScreen extends StatelessWidget {
                   Divider(),
                   HeadlineText(text: 'Essentials'),
                   Container(
-                    height: 120,
+                    height: 100,
                     width: double.infinity,
                     margin: EdgeInsets.all(0),
                     child: GridView.builder(

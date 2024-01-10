@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kuda_ui/helpers/constraints.dart';
 import 'package:kuda_ui/widgets/balance_bar.dart';
+import 'package:kuda_ui/widgets/kuda_button.dart';
 
 class SaveTab extends StatelessWidget {
   @override
@@ -66,25 +67,7 @@ class SaveTab extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Container(
-              alignment: Alignment.bottomCenter,
-              width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  color: kPurpleDeep, borderRadius: BorderRadius.circular(5)),
-              child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      'Save Now',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14,
-                          color: Colors.white),
-                    )
-                  ]),
-            ),
+            KudaButton(title: 'Save Now'),
           ],
         ),
       ),

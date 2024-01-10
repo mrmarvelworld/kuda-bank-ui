@@ -13,7 +13,7 @@ class SpendTab extends StatelessWidget {
     final data = PayData().data;
     return SingleChildScrollView(
         child: Container(
-      margin: EdgeInsets.only(top: 25),
+      margin: EdgeInsets.only(top: 30),
       padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: <Widget>[
@@ -22,7 +22,7 @@ class SpendTab extends StatelessWidget {
             belowText: 'Last updated a few sec ago',
             title: 'Nigeria Naira',
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -42,7 +42,7 @@ class SpendTab extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Container(
             width: double.infinity,
             padding: EdgeInsets.only(left: 10, right: 10, top: 15, bottom: 15),
@@ -73,7 +73,7 @@ class SpendTab extends StatelessWidget {
                   RoundedImage(imageUrl: 'assets/images/kuda_logo.png'),
                 ]),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           //quick access
           Container(
             child: Column(children: <Widget>[
@@ -99,7 +99,7 @@ class SpendTab extends StatelessWidget {
               ClipRect(
                 child: Container(
                   width: double.infinity,
-                  height: 230,
+                  height: 180,
                   child: GridView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     // scrollDirection: Axis.horizontal,
