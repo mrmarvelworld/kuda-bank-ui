@@ -1,16 +1,17 @@
-# kuda_ui
+# kuda bank UI
 
-A new Flutter project.
+The Kuda bank UI  is written purely with flutter - a cross platform dart framework for building mobile apps
 
-## Getting Started
+ Kuda bank is a Nigeria fintech bank that  offers banking services fully online , serving millions of customers across the borders of Africa.
 
-This project is a starting point for a Flutter application.
+ The Kuda Bank UI is built with scalability in mind using reusable highly customizable widgets as you wil notice when you are checking the libs/widgets folder.
+ 
+You can feel free to clone the repo and customize it to fit you clients needs
 
-A few resources to get you started if this is your first Flutter project:
+You can also reach at to me through
+# Email : ikpmarvel@gmail.com
+# Phone : +234-9155480561
+# Whatsapp: https://wa.me/09155480561
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+I will be more than happy to collaborate with you on your next project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
